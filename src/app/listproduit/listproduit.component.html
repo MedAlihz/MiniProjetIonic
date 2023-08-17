@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<div class="card-row">
+    
+  <div class="card-col" *ngFor="let produit of listproduits">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{produit.titre}}</ion-card-title>
+        <ion-card-subtitle>Quantité: {{produit.quantity}}</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Prix : {{produit.prix}} Euros  </ion-card-content>
+    
+        <ion-button class="btn btn-primary" style="border-radius: 8px;" (click)="SupprimerProduit(produit.id)" >Supprimer </ion-button>
+    </ion-card>
+  </div>
+</div>

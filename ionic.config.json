@@ -1,0 +1,10 @@
+{
+  "name": "my-ionic-produit",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
